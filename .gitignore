@@ -1,2 +1,7 @@
-.gitignore
-Project/Project/Project.vcxproj*
+*.vcxproj
+*.vcxproj.*
+**/Project.sln
+**/.vscode
+**/.idea
+.idea
+.vscode

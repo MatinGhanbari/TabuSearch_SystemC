@@ -1,4 +1,4 @@
-#include "SystemC.h"
+#include "systemc.h"
 #include <stdio.h>
 #include <iostream>
 #include <iomanip>
@@ -10,9 +10,9 @@ SC_MODULE(TabuSearch) {
     sc_in<sc_vector<sc_uint<9>>> itemsWeight;
     sc_in<sc_vector<sc_uint<9>>> itemsPrice;
     
-    sc_vector<sc_uint<9>> currentNode;
-    sc_vector<sc_uint<9>> lastNode;
-    sc_vector<sc_uint<9>> tempNode;
+    sc_vector<sc_uint<9>> currentNode = 0;
+    sc_vector<sc_uint<9>> lastNode = 0;
+    sc_vector<sc_uint<9>> tempNode = 0;
 
     sc_uint<4> index = 0;
     sc_uint<4> weight = 0;
@@ -41,7 +41,7 @@ SC_MODULE(TabuSearch) {
         cout << "Counter: " << counter << endl;
     }
 
-	SC_CTOR(tabu_serach) {
+	SC_CTOR(TabuSerach) {
         SC_METHOD(printResult);
         sensitive << currentNode;
 		SC_METHOD(search);

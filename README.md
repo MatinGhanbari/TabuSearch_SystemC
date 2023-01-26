@@ -33,13 +33,13 @@ This memory holds the total number of iterations that each solution was picked s
 Restart Diversification: allows components that rarely appear to be in the current solution by restarting the search from these points
 Continuous Diversification: biases the evaluation of possible moves with the frequency of these moves. Moves that do not appear as often will then have a higher probability to be made.
 Algorithm
-Step 1: We first start with an initial solution s = S₀. This can be any solution that fits the criteria for an acceptable solution.
+1. Step 1: We first start with an initial solution s = S₀. This can be any solution that fits the criteria for an acceptable solution.
 
-Step 2: Generate a set of neighbouring solutions to the current solution s labeled N(s). From this set of solutions, the solutions that are in the Tabu List are removed with the exception of the solutions that fit the Aspiration Criteria. This new set of results is the new N(s).
+2. Step 2: Generate a set of neighbouring solutions to the current solution s labeled N(s). From this set of solutions, the solutions that are in the Tabu List are removed with the exception of the solutions that fit the Aspiration Criteria. This new set of results is the new N(s).
 
 
-Step 3: Choose the best solution out of N(s) and label this new solution s’. If the solution s’ is better than the current best solution, update the current best solution. After, regardless if s’ is better than s, we update s to be s’.
+3. Step 3: Choose the best solution out of N(s) and label this new solution s’. If the solution s’ is better than the current best solution, update the current best solution. After, regardless if s’ is better than s, we update s to be s’.
 
-Step 4: Update the Tabu List T(s) by removing all moves that are expired past the Tabu Tenure and add the new move s’ to the Tabu List. Additionally, update the set of solutions that fit the Aspiration Criteria A(s). If frequency memory is used, then also increment the frequency memory counter with the new solution.
+4. Step 4: Update the Tabu List T(s) by removing all moves that are expired past the Tabu Tenure and add the new move s’ to the Tabu List. Additionally, update the set of solutions that fit the Aspiration Criteria A(s). If frequency memory is used, then also increment the frequency memory counter with the new solution.
 
-Step 5: If the Termination Criteria are met, then the search stops or else it will move onto the next iteration. Termination Criteria is dependent upon the problem at hand but some possible examples are:
+5. Step 5: If the Termination Criteria are met, then the search stops or else it will move onto the next iteration. Termination Criteria is dependent upon the problem at hand but some possible examples are:

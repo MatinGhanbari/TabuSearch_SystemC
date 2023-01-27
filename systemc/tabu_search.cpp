@@ -12,9 +12,12 @@ void tabu_search::prc_search(){
     for (const int& i : neighbors){
         sc_uint<9> node;
         node = i;
+
         double benefit=0.00;
+
         for (int j=0; j<9; j++)
             benefit +=  (node[j])*(prices[j]/weights[j]);
+
         if (benefit >= best_benefit && benefit >= cbenefit)
             best_neighbor = node, best_benefit = benefit;
         
@@ -24,21 +27,34 @@ void tabu_search::prc_search(){
 
     cNode = best_neighbor;
     cbenefit = best_benefit;
+
+    counter++;
 }
 
 void tabu_search::prc_findNeighbors(){
     cout << "prc_findNeighbors" << endl;
+    cout << "tabuList: ";
+    for (const int& i : tabuList)
+        cout << i << ", ";
+    cout << endl;
     std::vector<int> tneighbors;
-
+    bool tabu;
     for (int i=0; i<9; i++){
         tempNode = cNode;
+        tabu = false;
         tempNode[i] = (cNode[i]==0);
+
+        for(const int& i : tabuList)
+            if(tempNode == i){
+                tabu = true;
+                break;
+            }
 
         int tweight = 0;
         for (int j = 0; j < 9; j++)
             tweight += (weights[j]*tempNode[j]);
         
-        if (tweight <= W)
+        if (tweight <= W && tabu == false)
             tneighbors.push_back(tempNode);
     }
 
@@ -53,7 +69,9 @@ void tabu_search::prc_findStartNode(){
     cout << "prc_findStartNode" << endl;
     cNode = 0b000000111;
 
-    cbenefit = 0;
+    tabuList.push_back(cNode);
+
+    cbenefit = -1;
 
     bool high; high = 1;
     ready.write(high);

@@ -1,5 +1,5 @@
 #include "monitor.h"
 
-void monitor::print(){
-    cout << "\n" << "+ cNode: " << cNode << endl;
+void monitor::prc_print(){
+    cout << sc_time_stamp() << " cNode: " << cNode << endl;
 }

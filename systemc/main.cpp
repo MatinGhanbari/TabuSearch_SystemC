@@ -4,8 +4,9 @@
 #include "tabu_search.cpp"
 #include "monitor.cpp"
 
+
 int sc_main(int argc, char* argv[]) {
-    sc_signal<sc_uint<8>> n, W;
+    sc_signal<int> n, W;
     sc_signal<sc_uint<9>> startNode;
 
     n = 30, W = 20;

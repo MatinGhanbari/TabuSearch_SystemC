@@ -12,7 +12,7 @@ SC_MODULE(tabu_search){
 
     int index = 0;
     int weight = 0;
-    double benefit = 0;
+    double cbenefit = 0;
     int counter = 0; // searches counter
 
     sc_signal<bool> ready;

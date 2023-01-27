@@ -3,21 +3,26 @@
 
 #include "tabu_search.cpp"
 #include "monitor.cpp"
+#include "driver.cpp"
 
 
 int sc_main(int argc, char* argv[]) {
     sc_signal<int> n, W;
-    sc_signal<sc_uint<9>> startNode;
+    sc_signal<bool> ready;
 
-    n = 30, W = 20;
-    
     tabu_search ts("ts1");
     ts.n(n);
     ts.W(W);
+    ts.ready(ready);
 
-    monitor monitor("monitor1");
-    monitor.cNode(startNode);
+    driver d1("Driver");
+    d1.n(n);
+    d1.W(W);
+    d1.ready(ready);
     
-    sc_start();
+    monitor m1("monitor1");
+    m1.ready(ready);
+    
+    sc_start(300, SC_NS);
     return(0);
 }

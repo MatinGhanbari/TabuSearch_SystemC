@@ -1,9 +1,9 @@
 #include "tabu_search.h"
 
 void tabu_search::prc_search(){
-    if (ready != '1')
+    if (ready.read() != 1)
         return;
-        
+
     cout << "prc_search" << endl;
     prc_findNeighbors();
 
@@ -36,7 +36,7 @@ void tabu_search::prc_findStartNode(){
     cout << "prc_findStartNode" << endl;
     cNode = 0b000000111;
 
-    sc_logic high;
-    high = '1';
+    bool high;
+    high = 1;
     ready.write(high);
 }

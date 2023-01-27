@@ -5,7 +5,6 @@ SC_MODULE(tabu_search){
 
     sc_in<int> n;
     sc_in<int> W;
-    sc_in<sc_uint<9>> startNode;
 
     sc_uint<9> cNode;
     sc_uint<9> lNode;
@@ -25,8 +24,11 @@ SC_MODULE(tabu_search){
     void prc_findStartNode();
 
     SC_CTOR(tabu_search){
-        SC_METHOD(prc_search);
-        SC_METHOD(prc_findNeighbors);
         SC_METHOD(prc_findStartNode);
+
+        SC_METHOD(prc_search);
+
+        SC_METHOD(prc_findNeighbors);
     }
+    
 };

@@ -2,7 +2,6 @@
 
 void tabu_search::prc_search(){
     
-
 }
 
 void tabu_search::prc_findNeighbors(){
@@ -29,5 +28,6 @@ void tabu_search::prc_findNeighbors(){
 }
 
 void tabu_search::prc_findStartNode(){
-    // tabu search : find neighbors
+    cout << "prc_findStartNode" << endl;
+    cNode = 0b000000111;
 }

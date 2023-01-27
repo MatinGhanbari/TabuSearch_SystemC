@@ -39,6 +39,7 @@ void tabu_search::prc_findNeighbors(){
     cout << endl;
     std::vector<int> tneighbors;
     bool tabu;
+    prc_aspirationCriterion();
     for (int i=0; i<9; i++){
         tempNode = cNode;
         tabu = false;
@@ -54,8 +55,9 @@ void tabu_search::prc_findNeighbors(){
         for (int j = 0; j < 9; j++)
             tweight += (weights[j]*tempNode[j]);
         
-        if (tweight <= W && tabu == false)
-            tneighbors.push_back(tempNode);
+        if (tweight <= W)
+            if (tabu == false)
+                tneighbors.push_back(tempNode);    
     }
 
     for (const int& i : tneighbors)
@@ -71,8 +73,27 @@ void tabu_search::prc_findStartNode(){
 
     tabuList.push_back(cNode);
 
-    cbenefit = -1;
+    cbenefit = 0;
+    for(int i=0; i<9; i++)
+        cbenefit += cNode[i]*(prices[i]/weights[i]);
 
     bool high; high = 1;
     ready.write(high);
+}
+
+void tabu_search::prc_aspirationCriterion(){
+    std::vector<int> newtabuList;
+    double bnf;
+    sc_uint<9> node;
+    for (const int& i : tabuList){
+        node = i;
+        bnf=0;
+        for(int i=0; i<9; i++)
+            bnf += node[i]*(prices[i]/weights[i]);
+        if (bnf <= cbenefit)
+            newtabuList.push_back(node);
+        else
+            cout << "node " << node << " remoed from tabu list." << endl;
+    }
+    tabuList=newtabuList;
 }

@@ -23,10 +23,13 @@ SC_MODULE(tabu_search){
     void prc_search();
     void prc_findNeighbors();
     void prc_findStartNode();
+    void prc_aspirationCriterion();
 
     SC_CTOR(tabu_search){
         SC_METHOD(prc_findStartNode);
+        SC_METHOD(prc_aspirationCriterion);
         SC_METHOD(prc_findNeighbors);
+        
         SC_METHOD(prc_search);
         sensitive << ready;
     }

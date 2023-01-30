@@ -1,0 +1,440 @@
+
+====================
+# Tabu List:
+  - node 3, time: 9
+
+====================
+# Tabu List:
+  - node 3, time: 8
+0 s ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 7
+0 s:  Search 0, cNode: 259
+0 s ready: 1
+1 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 6
+  - node 259, time: 9
+10 ns:  Search 1, cNode: 387
+10 ns ready: 1
+11 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 5
+  - node 259, time: 8
+  - node 387, time: 9
+20 ns:  Search 2, cNode: 451
+20 ns ready: 1
+21 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 4
+  - node 259, time: 7
+  - node 387, time: 8
+  - node 451, time: 9
+30 ns:  Search 3, cNode: 195
+30 ns ready: 1
+31 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 3
+  - node 259, time: 6
+  - node 387, time: 7
+  - node 451, time: 8
+  - node 195, time: 9
+40 ns:  Search 4, cNode: 199
+40 ns ready: 1
+41 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 2
+  - node 259, time: 5
+  - node 387, time: 6
+  - node 451, time: 7
+  - node 195, time: 8
+  - node 199, time: 9
+50 ns:  Search 5, cNode: 71
+50 ns ready: 1
+51 ns ready: 0
+
+====================
+# Tabu List:
+  - node 3, time: 1
+  - node 259, time: 4
+  - node 387, time: 5
+  - node 451, time: 6
+  - node 195, time: 7
+  - node 199, time: 8
+  - node 71, time: 9
+60 ns:  Search 6, cNode: 327
+60 ns ready: 1
+61 ns ready: 0
+node 3 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 259, time: 3
+  - node 387, time: 4
+  - node 451, time: 5
+  - node 195, time: 6
+  - node 199, time: 7
+  - node 71, time: 8
+  - node 327, time: 9
+70 ns:  Search 7, cNode: 263
+70 ns ready: 1
+71 ns ready: 0
+
+====================
+# Tabu List:
+  - node 259, time: 2
+  - node 387, time: 3
+  - node 451, time: 4
+  - node 195, time: 5
+  - node 199, time: 6
+  - node 71, time: 7
+  - node 327, time: 8
+  - node 263, time: 9
+80 ns:  Search 8, cNode: 391
+80 ns ready: 1
+81 ns ready: 0
+
+====================
+# Tabu List:
+  - node 259, time: 1
+  - node 387, time: 2
+  - node 451, time: 3
+  - node 195, time: 4
+  - node 199, time: 5
+  - node 71, time: 6
+  - node 327, time: 7
+  - node 263, time: 8
+  - node 391, time: 9
+90 ns:  Search 9, cNode: 135
+90 ns ready: 1
+91 ns ready: 0
+node 259 remved from tabu list.
+node 451 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 387, time: 1
+  - node 195, time: 3
+  - node 199, time: 4
+  - node 71, time: 5
+  - node 327, time: 6
+  - node 263, time: 7
+  - node 391, time: 8
+  - node 135, time: 9
+100 ns:  Search 10, cNode: 151
+100 ns ready: 1
+101 ns ready: 0
+node 387 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 195, time: 2
+  - node 199, time: 3
+  - node 71, time: 4
+  - node 327, time: 5
+  - node 263, time: 6
+  - node 391, time: 7
+  - node 135, time: 8
+  - node 151, time: 9
+110 ns:  Search 11, cNode: 23
+110 ns ready: 1
+111 ns ready: 0
+node 195 remved from tabu list.
+node 199 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 71, time: 3
+  - node 327, time: 4
+  - node 263, time: 5
+  - node 391, time: 6
+  - node 135, time: 7
+  - node 151, time: 8
+  - node 23, time: 9
+120 ns:  Search 12, cNode: 87
+120 ns ready: 1
+121 ns ready: 0
+
+====================
+# Tabu List:
+  - node 71, time: 2
+  - node 327, time: 3
+  - node 263, time: 4
+  - node 391, time: 5
+  - node 135, time: 6
+  - node 151, time: 7
+  - node 23, time: 8
+  - node 87, time: 9
+130 ns:  Search 13, cNode: 83
+130 ns ready: 1
+131 ns ready: 0
+node 71 remved from tabu list.
+node 327 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 263, time: 3
+  - node 391, time: 4
+  - node 135, time: 5
+  - node 151, time: 6
+  - node 23, time: 7
+  - node 87, time: 8
+  - node 83, time: 9
+140 ns:  Search 14, cNode: 339
+140 ns ready: 1
+141 ns ready: 0
+
+====================
+# Tabu List:
+  - node 263, time: 2
+  - node 391, time: 3
+  - node 135, time: 4
+  - node 151, time: 5
+  - node 23, time: 6
+  - node 87, time: 7
+  - node 83, time: 8
+  - node 339, time: 9
+150 ns:  Search 15, cNode: 323
+150 ns ready: 1
+151 ns ready: 0
+node 391 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 263, time: 1
+  - node 135, time: 3
+  - node 151, time: 4
+  - node 23, time: 5
+  - node 87, time: 6
+  - node 83, time: 7
+  - node 339, time: 8
+  - node 323, time: 9
+160 ns:  Search 16, cNode: 451
+160 ns ready: 1
+161 ns ready: 0
+node 263 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 135, time: 2
+  - node 151, time: 3
+  - node 23, time: 4
+  - node 87, time: 5
+  - node 83, time: 6
+  - node 339, time: 7
+  - node 323, time: 8
+  - node 451, time: 9
+170 ns:  Search 17, cNode: 195
+170 ns ready: 1
+171 ns ready: 0
+
+====================
+# Tabu List:
+  - node 135, time: 1
+  - node 151, time: 2
+  - node 23, time: 3
+  - node 87, time: 4
+  - node 83, time: 5
+  - node 339, time: 6
+  - node 323, time: 7
+  - node 451, time: 8
+  - node 195, time: 9
+180 ns:  Search 18, cNode: 199
+180 ns ready: 1
+181 ns ready: 0
+node 135 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 151, time: 1
+  - node 23, time: 2
+  - node 87, time: 3
+  - node 83, time: 4
+  - node 339, time: 5
+  - node 323, time: 6
+  - node 451, time: 7
+  - node 195, time: 8
+  - node 199, time: 9
+190 ns:  Search 19, cNode: 71
+190 ns ready: 1
+191 ns ready: 0
+node 151 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 23, time: 1
+  - node 87, time: 2
+  - node 83, time: 3
+  - node 339, time: 4
+  - node 323, time: 5
+  - node 451, time: 6
+  - node 195, time: 7
+  - node 199, time: 8
+  - node 71, time: 9
+200 ns:  Search 20, cNode: 327
+200 ns ready: 1
+201 ns ready: 0
+node 23 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 87, time: 1
+  - node 83, time: 2
+  - node 339, time: 3
+  - node 323, time: 4
+  - node 451, time: 5
+  - node 195, time: 6
+  - node 199, time: 7
+  - node 71, time: 8
+  - node 327, time: 9
+210 ns:  Search 21, cNode: 263
+210 ns ready: 1
+211 ns ready: 0
+node 87 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 83, time: 1
+  - node 339, time: 2
+  - node 323, time: 3
+  - node 451, time: 4
+  - node 195, time: 5
+  - node 199, time: 6
+  - node 71, time: 7
+  - node 327, time: 8
+  - node 263, time: 9
+220 ns:  Search 22, cNode: 391
+220 ns ready: 1
+221 ns ready: 0
+node 83 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 339, time: 1
+  - node 323, time: 2
+  - node 451, time: 3
+  - node 195, time: 4
+  - node 199, time: 5
+  - node 71, time: 6
+  - node 327, time: 7
+  - node 263, time: 8
+  - node 391, time: 9
+230 ns:  Search 23, cNode: 135
+230 ns ready: 1
+231 ns ready: 0
+node 339 remved from tabu list.
+node 451 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 323, time: 1
+  - node 195, time: 3
+  - node 199, time: 4
+  - node 71, time: 5
+  - node 327, time: 6
+  - node 263, time: 7
+  - node 391, time: 8
+  - node 135, time: 9
+240 ns:  Search 24, cNode: 151
+240 ns ready: 1
+241 ns ready: 0
+node 323 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 195, time: 2
+  - node 199, time: 3
+  - node 71, time: 4
+  - node 327, time: 5
+  - node 263, time: 6
+  - node 391, time: 7
+  - node 135, time: 8
+  - node 151, time: 9
+250 ns:  Search 25, cNode: 23
+250 ns ready: 1
+251 ns ready: 0
+node 195 remved from tabu list.
+node 199 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 71, time: 3
+  - node 327, time: 4
+  - node 263, time: 5
+  - node 391, time: 6
+  - node 135, time: 7
+  - node 151, time: 8
+  - node 23, time: 9
+260 ns:  Search 26, cNode: 87
+260 ns ready: 1
+261 ns ready: 0
+
+====================
+# Tabu List:
+  - node 71, time: 2
+  - node 327, time: 3
+  - node 263, time: 4
+  - node 391, time: 5
+  - node 135, time: 6
+  - node 151, time: 7
+  - node 23, time: 8
+  - node 87, time: 9
+270 ns:  Search 27, cNode: 83
+270 ns ready: 1
+271 ns ready: 0
+node 71 remved from tabu list.
+node 327 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 263, time: 3
+  - node 391, time: 4
+  - node 135, time: 5
+  - node 151, time: 6
+  - node 23, time: 7
+  - node 87, time: 8
+  - node 83, time: 9
+280 ns:  Search 28, cNode: 339
+280 ns ready: 1
+281 ns ready: 0
+
+====================
+# Tabu List:
+  - node 263, time: 2
+  - node 391, time: 3
+  - node 135, time: 4
+  - node 151, time: 5
+  - node 23, time: 6
+  - node 87, time: 7
+  - node 83, time: 8
+  - node 339, time: 9
+290 ns:  Search 29, cNode: 323
+290 ns ready: 1
+291 ns ready: 0
+node 391 remved from tabu list.
+
+====================
+# Tabu List:
+  - node 263, time: 1
+  - node 135, time: 3
+  - node 151, time: 4
+  - node 23, time: 5
+  - node 87, time: 6
+  - node 83, time: 7
+  - node 339, time: 8
+  - node 323, time: 9
+300 ns:  Search 30, cNode: 451
+300 ns ready: 1
+301 ns ready: 0

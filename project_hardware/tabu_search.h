@@ -22,7 +22,7 @@ SC_MODULE(tabu_search) {
 
     void prc_search();
     void prc_findNeighbors();
-    void prc_findStartNode();
+    int prc_findStartNode();
     void prc_aspirationCriterion();
 
     SC_CTOR(tabu_search) {
